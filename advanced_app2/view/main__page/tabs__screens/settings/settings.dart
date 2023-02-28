@@ -13,9 +13,7 @@ import '../../../../controllers/settings__controller/enable__vibration.dart';
 import '../../../../controllers/settings__controller/show__delete__button__for__favorites.dart';
 import '../../../../controllers/settings__controller/reset__all__settings.dart';
 import '../../../../controllers/settings__controller/show__on__lock__screen__setting.dart';
-import '../../../../controllers/settings__controller/source_code_link_launcher.dart';
-import '../../../contact/contact.dart';
-import '../../../privacy/privacy.dart';
+
 import 'widgets/setting__card.dart';
 
 class SettingsScreen extends StatelessWidget {
