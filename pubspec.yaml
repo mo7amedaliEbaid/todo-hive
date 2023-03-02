@@ -33,29 +33,45 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  hive_flutter: ^1.1.0
-  flutter_slidable: ^2.0.0
-#  bubble_bottom_bar: ^2.0.0
+  hive_flutter:
+  flutter_slidable:
   cupertino_icons: ^1.0.4
-  date_format: ^2.0.6
-  flutter_local_notifications: ^9.5.3+1
-  flutter_native_timezone: ^2.0.0
-  flutter_svg: ^1.1.0
-  font_awesome_flutter: ^10.1.0
-  get: ^4.6.5
-  get_storage: ^2.0.3
-#  google_fonts: ^3.0.1
-  hive: ^2.2.1
-  intl: ^0.17.0
-  lottie: ^1.3.0
-  path_provider: ^2.0.10
-  timezone: ^0.8.0
+  date_format:
+  flutter_local_notifications: ^9.7.0
+  flutter_native_timezone:
+  flutter_svg:
+  font_awesome_flutter:
+  get:
+  get_storage:
+  hive:
+  intl:
+  lottie:
+  path_provider:
+  timezone:
+
+  android_alarm_manager_plus:
+  animations:
+  auto_size_text:
+  build_runner:
+  delayed_display:
+  floating_bottom_navigation_bar:
+  floating_navbar:
+
+  flutter_markdown:
+
+  flutter_point_tab_bar:
+  fluttertoast:
+  google_fonts:
+
+  hive_generator:
+  oktoast:
+  url_launcher:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  hive_generator: ^2.0.0
-  build_runner: ^2.3.3
+  hive_generator:
+  build_runner:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
