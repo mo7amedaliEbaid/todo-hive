@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo_hive/customWidgets/todo_tile.dart';
-import '../data_services/data.dart';
+
 import '../customWidgets/dialog.dart';
+import '../data_services/data.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-      db.loadData();
+    db.loadData();
     super.initState();
   }
 
@@ -72,18 +72,24 @@ class _HomePageState extends State<HomePage> {
         onPressed: createNewTask,
         child: Icon(Icons.add),
       ),
-      body: ListView.builder(
-        itemCount: db.toDoList.length,
-        itemBuilder: (context, index) {
-          return ToDoTile(
-            taskName: db.toDoList[index][0],
-            taskCompleted: db.toDoList[index][1],
-            onChanged: (value) => checkBoxChanged(value, index),
-            deleteFunction: (context) => deleteTask(index),
-          );
-        },
-      ),
+      body: db.toDoList.isEmpty && db.toDoList != null
+          ? Center(
+              child: Text(
+                "Add Some plans To Do",
+                style: TextStyle(fontSize: 30, color: Colors.white),
+              ),
+            )
+          : ListView.builder(
+              itemCount: db.toDoList.length,
+              itemBuilder: (context, index) {
+                return ToDoTile(
+                  taskName: db.toDoList[index][0],
+                  taskCompleted: db.toDoList[index][1],
+                  onChanged: (value) => checkBoxChanged(value, index),
+                  deleteFunction: (context) => deleteTask(index),
+                );
+              },
+            ),
     );
   }
-
 }
