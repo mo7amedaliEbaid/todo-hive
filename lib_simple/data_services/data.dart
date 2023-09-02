@@ -6,7 +6,7 @@ class ToDoDataBase {
   final _todoBox = Hive.box('mybox');
   // load the data from database
   void loadData() {
-    toDoList = _todoBox.get("TODOLIST");
+    toDoList = _todoBox.get("TODOLIST")??[];
   }
 
   void updateDataBase() {

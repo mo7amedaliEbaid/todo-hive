@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todo_hive/customWidgets/todo_tile.dart';
 
 import '../customWidgets/dialog.dart';
+import '../customWidgets/todo_tile.dart';
 import '../data_services/data.dart';
 
 class HomePage extends StatefulWidget {
